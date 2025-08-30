@@ -2,8 +2,11 @@
 import { useState } from "react";
 import { Product } from "../product-data";
 import Link from "next/link";  
+
+
 export default function ShoppingCart({initialProducts}:{initialProducts:Product[]}) {
     
+
  const [cartItems, setCartItems] = useState(initialProducts);
  const removeFromCart = async (productId:string) => {
 
